@@ -1,14 +1,14 @@
 # K-Means and K-Medoids Clustering Lab
 
-**Course:** MSCS-634-M50 – Advanced Big Data and Data Mining  
+**Course:** MSCS-634-M50 - Advanced Big Data and Data Mining  
 **Student:** Elkana Munganga
 
 ## Purpose
 
 This lab compares two partitioning clustering algorithms on the scikit-learn Wine dataset (178 samples, 13 chemical features, 3 cultivar classes):
 
-- **K-Means** — each cluster center is the mean of its assigned points
-- **K-Medoids** — each cluster center is an actual observation (a medoid)
+- **K-Means** - each cluster center is the mean of its assigned points
+- **K-Medoids** - each cluster center is an actual observation (a medoid)
 
 The work standardizes the features, clusters the wines into three groups, evaluates the results with Silhouette Score and Adjusted Rand Index (ARI), and plots the clusters on alcohol vs. malic acid. The notebook is `lab3.ipynb`.
 
@@ -30,7 +30,7 @@ The work standardizes the features, clusters the wines into three groups, evalua
 **Observations**
 
 - Both algorithms recovered three groups, but K-Means produced slightly tighter clusters and matched the true labels much more closely.
-- The Silhouette Scores are moderate (around 0.27–0.28). The clusters are usable, but they are not cleanly separated in feature space.
+- The Silhouette Scores are moderate (around 0.27-0.28). The clusters are usable, but they are not cleanly separated in feature space.
 - ARI tells a different story from silhouette: K-Means is only a little better on compactness, but much better at recovering the actual cultivars (0.90 vs. 0.74).
 - The scatter plots of alcohol vs. malic acid show overlap. That is expected: clustering used all 13 features, while the plots show only two of them.
 - K-Means cluster sizes were closer to one another. K-Medoids put more wines into one group (74), which is closer to the true class counts (59 / 71 / 48) but still aligned less well overall.
