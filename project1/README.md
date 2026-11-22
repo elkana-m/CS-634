@@ -2,7 +2,7 @@
 
 ## Data Collection, Cleaning, and Exploration
 
-**Student** Minh Le, Sebastian Capkovi, Shreyas More, Elkana Munganga
+**Student** Minh Le, Sebastian Capkovic, Shreyas More, Elkana Munganga
 **Course:** MSCS-634 – Advanced Big Data and Data Mining  
 **Dataset:** German Credit Data
 
